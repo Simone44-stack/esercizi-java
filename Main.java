@@ -1,26 +1,16 @@
-package esercizio_2;
+package esercizio_1;
 
 public class Main {
 
-	
+	public static void main(String[] args) {
 
-	 public static void main(String[] args) {
+        // Creazione di un oggetto Studente_es1
+        Studente_es1 studente = new Studente_es1("Luca", "Rossi", 2002);
 
-	        
-	        Studente studente = new Studente("Simone", "Di Fede", "S12345");
-	        Professore professore = new Professore("Giulia", "Rosso", "Matematica");
-	        Persona personaGenerica = new Persona("Lucio", "Testa");
+        // Stampa della scheda dello studente
+        studente.stampaScheda();
+    }
+}
 
-	        
-	        Persona[] persone = new Persona[3];
-	        persone[0] = studente;
-	        persone[1] = professore;
-	        persone[2] = personaGenerica;
 
-	        
-	        for (Persona p : persone) {
-	            p.presentati();
-	        }
-	    }
-	}
-
+//main Esercizio 1 
